@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 
-    $('#wrapper').fullpage();
+    $('#wrapper').fullpage({
+    
+    });
 
 });
