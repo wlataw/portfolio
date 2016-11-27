@@ -1,0 +1,70 @@
+*
+  box-sizing: border-box
+  padding: 0px
+  margin: 0px
+
+header
+  height: 600px
+  //background: #aec4e8
+
+  .logo
+    margin: 20px
+    float: left
+    width: 95px
+    height: 120px
+
+    &:hover
+
+
+nav
+  float: right
+  margin: 20px 20px 0 0
+
+  a
+    color: grey
+    display: inline-block
+    margin-left: 20px
+    font:
+      weight: 500
+      size: 20px
+    text-transform: uppercase
+
+    &:hover
+      color: black
+
+h1
+  text-align: center
+  font:
+    size: 40px
+    weight: 1000
+  color: white
+  text-transform: uppercase
+  clear: both
+  padding-top: 100px
+
+  span
+    display: inline-block
+    padding: 0.5em 0.8em
+    border: white solid 10px
+
+.comment
+  text-align: center
+  font:
+    weight: 500
+  color: white
+
+video#bgvid
+  filter: grayscale(100%)
+  position: fixed
+  top: 50%
+  left: 50%
+  min-width: 100%
+  min-height: 100%
+  width: auto
+  height: auto
+  z-index: -100
+  -ms-transform: translateX(-50%) translateY(-50%)
+  -moz-transform: translateX(-50%) translateY(-50%)
+  -webkit-transform: translateX(-50%) translateY(-50%)
+  transform: translateX(-50%) translateY(-50%)
+  background-size: cover
