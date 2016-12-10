@@ -257,24 +257,24 @@ h1 {
 
 .comment {
   text-align: center;
-  font-weight: 500;
+  font: arial;
+  weight: 500;
   color: white; }
 
 video#bgvid {
-  filter: grayscale(100%);
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background-size: contain; }
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black;
+  background-position: center center;
+  background-size: contain;
+  object-fit: fill;
+  z-index: 3; }
 
 * {
   box-sizing: border-box;
@@ -294,7 +294,7 @@ img .aboutBg {
 
 div#aboutId {
   background-image: url("/assets/img/aboutBg.jpg");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover; }
 
 img {
@@ -303,7 +303,7 @@ img {
 
 div#portfolioId {
   background-image: url("/assets/img/portf.jpg");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover; }
 
 img {
@@ -312,7 +312,7 @@ img {
 
 div#contactId {
   background-image: url("/assets/img/kont.jpg");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */
