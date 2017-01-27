@@ -186,8 +186,8 @@ th {
   src: local("Fira Sans"), local("FiraSans-Regular"), url(http://fonts.gstatic.com/s/firasans/v5/EjsrzDkQUQCDwsBtLpcVQZBw1xU1rKptJj_0jans920.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
 @font-face {
-  font-family: "Better Together";
-  src: url("Better_Together.woff") format("woff"), url("Better_Together.ttf") format("truetype");
+  font-family: "Ben Brown";
+  src: url("BENBROWN.woff") format("woff"), url("BENBROWN.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 .fp-controlArrow {
@@ -241,7 +241,7 @@ header {
   float: right; }
   .navbar h1.title {
     color: #ffffff;
-    font-family: Better Together;
+    font-family: Ben Brown;
     font-size: 72px;
     font-weight: normal;
     text-align: center;
@@ -267,7 +267,7 @@ header {
       float: right;
       text-align: center;
       margin: auto;
-      font-family: Better Together;
+      font-family: Ben Brown;
       white-space: nowrap;
       display: flex;
       align-items: center;
@@ -287,18 +287,53 @@ header {
         .navbar div.menu nav a#first:hover {
           color: grey; }
 
-h1.sentence {
+div.logoWrapper {
+  text-align: center; }
+  div.logoWrapper .logo {
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    display: inline-block;
+    width: 130px;
+    height: 180px; }
+    div.logoWrapper .logo path {
+      fill: #000000; }
+    div.logoWrapper .logo:hover path {
+      fill: #d9d9d9; }
+  div.logoWrapper h2.title {
+    font-size: 96px;
+    font-weight: 400;
+    color: white;
+    font-family: Ben Brown; }
+
+div.mediaWrapper {
   text-align: center;
-  font-size: 40px;
-  font-weight: 1000;
-  color: white;
-  text-transform: uppercase;
-  clear: both;
-  vertical-align: middle;
-  font-family: Better Together; }
+  margin-top: 20px; }
+  div.mediaWrapper p {
+    color: white; }
+  div.mediaWrapper div.icons {
+    margin-top: 20px; }
+    div.mediaWrapper div.icons a {
+      margin-left: 20px;
+      margin-right: 20px; }
+      div.mediaWrapper div.icons a:hover path {
+        fill: #d9d9d9; }
+
+div.contactWrapper {
+  text-align: center;
+  margin: 30px; }
+  div.contactWrapper p {
+    color: white;
+    margin: 20px; }
+  div.contactWrapper h2 {
+    font-size: 64px;
+    font-weight: 400;
+    color: white;
+    font-family: Ben Brown; }
 
 video#bgvid {
   position: absolute;
+  filter: grayscale(100%);
   right: 0;
   bottom: 0;
   top: 0;
@@ -311,59 +346,6 @@ video#bgvid {
   object-fit: cover;
   z-index: -1; }
 
-body {
-  background: black; }
-
-.arrow {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  margin-left: -20px; }
-
-.bounce {
-  -webkit-animation-name: bounce;
-  -moz-animation-name: bounce;
-  -o-animation-name: bounce;
-  animation-name: bounce; }
-
-.animated -o-animation-fill-mode:both {
-  animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  -ms-animation-duration: 2s;
-  -o-animation-duration: 2s;
-  animation-duration: 2s; }
-
-@-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0); }
-  40% {
-    -webkit-transform: translateY(-30px); }
-  60% {
-    -webkit-transform: translateY(-15px); } }
-@-moz-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -moz-transform: translateY(0); }
-  40% {
-    -moz-transform: translateY(-30px); }
-  60% {
-    -moz-transform: translateY(-15px); } }
-@-o-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -o-transform: translateY(0); }
-  40% {
-    -o-transform: translateY(-30px); }
-  60% {
-    -o-transform: translateY(-15px); } }
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0); }
-  40% {
-    transform: translateY(-30px); }
-  60% {
-    transform: translateY(-15px); } }
 * {
   box-sizing: border-box;
   padding: 0px;
