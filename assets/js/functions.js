@@ -5,6 +5,7 @@ $( document ).ready(function() {
     afterRender: function(){
       //playing the video
       $('video').get(0).play();
+      $('.my-slider').unslider();
     }
   });
 });
