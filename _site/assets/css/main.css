@@ -360,7 +360,7 @@ div#aboutId {
   div#aboutId .bgContainer {
     color: white;
     margin: 0 auto;
-    max-width: 1000px; }
+    max-width: 1300px; }
   div#aboutId .bgContainer > h2 {
     clear: both;
     margin: 0;
@@ -374,17 +374,18 @@ div#aboutId {
     position: relative;
     margin: 0 auto;
     padding: 0;
-    max-width: 1000px;
+    max-width: 1300px;
     list-style: none;
     text-align: center; }
   div#aboutId .grid figure {
     position: relative;
-    float: left;
+    display: inline-block;
+    float: none;
     overflow: hidden;
-    margin: 10px 1%;
-    min-width: 320px;
-    max-width: 480px;
-    max-height: 360px;
+    margin: 10px;
+    min-width: 240px;
+    max-width: 400px;
+    max-height: 300px;
     width: 48%;
     background: #000;
     text-align: center;
