@@ -505,13 +505,17 @@ div#contactId {
   font-size: 1vw; }
 
 div.contactBg {
-  text-align: center; }
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+  font-size: 1vw; }
   div.contactBg p {
     color: white;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     font-size: 1.5em;
-    font-family: "Georgia"; }
+    font-family: "Georgia";
+    text-align: center; }
   div.contactBg div.contactWrapper {
     float: left;
     width: 100%;
@@ -520,7 +524,8 @@ div.contactBg {
       font-size: 7em;
       font-weight: 400;
       color: white;
-      font-family: Ben Brown; }
+      font-family: Ben Brown;
+      text-align: center; }
   div.contactBg div.mediaWrapper {
     text-align: center;
     float: left;
@@ -551,5 +556,9 @@ div.contactBg {
       color: white;
       font-size: 1em;
       font-family: "Georgia"; }
+
+@media screen and (max-width: 720px) {
+  div.contactBg {
+    font-size: 10px; } }
 
 /*# sourceMappingURL=main.css.map */

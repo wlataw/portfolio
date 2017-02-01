@@ -7,8 +7,12 @@ div#contactId
   font-size: 1vw
   //border: red solid 1px
 
+
 div.contactBg
-  text-align: center
+  position: relative
+  margin: 0 auto
+  max-width: 1200px
+  font-size: 1vw
 
   p
     color: white
@@ -17,6 +21,7 @@ div.contactBg
     font:
       size: 1.5em
     font-family: $fontParagraph
+    text-align: center
 
   div.contactWrapper
     float: left
@@ -29,6 +34,7 @@ div.contactBg
         weight: 400
       color: white
       font-family: $fontHeader
+      text-align: center
       //border: red solid 1px
 
   div.mediaWrapper
@@ -71,3 +77,7 @@ div.contactBg
       font:
         size: 1em
       font-family: $fontParagraph
+
+@media screen and (max-width: 720px)
+  div.contactBg
+    font-size: 10px
