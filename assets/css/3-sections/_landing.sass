@@ -1,28 +1,87 @@
+// *
+//   border: red solid 1px
+
+#landingId
+  text-align: center
+
+.fp-tableCell
+  display: block !important
+
+// div.bufferWrapper
+//   float: left
+//   width: 100%
+//   display: block
+//   border: blue solid 2px
+
+
 div.logoWrapper
   text-align: center
-  margin-top: -140px
+  margin: 0 auto
+  margin-top: 2em
+  padding: 30px
+  min-width: 300px
+  vertical-align: top
+  float: left
+  width: 100%
 
   .logo
-    margin: 0px
-    margin-bottom: 10px
-    margin-top: 30px
+    margin: 0 auto
     display: inline-block
-    width: 130px
-    height: 180px
+    width: 15%
+    max-width: 260px
+    min-width: 100px
+
     path
-      fill: #000000
+      fill: $mainColor !important
 
     &:hover
       path
         fill: #d9d9d9
 
+    svg
+      width: 100%
+      max-width: 260px
+      height: inherit
+      max-height: 360px
+
+    .titleWrapper
+      width: 100%
+      float: left
+
   h2.title
-    font:
-      size: 120px
-      weight: 400
+    text-align: center
+    font-size: 10vw
+    font-weight: 300
     color: white
     font-family: $fontHeader
+    margin-top: 0.2em
+    margin: auto
+    white-space: nowrap
     //border: red solid 1px
+
+div.arrow
+  position: fixed
+  left: 50%
+  bottom: 0
+  margin-left: -25px
+  max-height: 65px
+  max-width: 65px
+  animation: myframes 1.5s ease-in-out 0s infinite
+
+  a
+    position: absolute
+    left: 0
+    top: 0
+    max-height: 65px
+    max-width: 65px
+
+@keyframes myframes
+  0%
+    margin-bottom: 4em
+  50%
+    margin-bottom: 7em
+  100%
+    margin-bottom: 4em
 
 video#bgvid
   position: absolute
@@ -38,21 +97,3 @@ video#bgvid
   background-position: center center
   object-fit: cover
   z-index: -1
-
-div.arrow
-  position: fixed
-  left: 50%
-  bottom: 0
-  margin-top: -25px
-  margin-left: -25px
-  height: 50px
-  width: 50px
-  animation: myframes 2s ease-in-out 0s infinite
-
-@keyframes myframes
-  0%
-    height: 150px
-  50%
-    height: 200px
-  100%
-    height: 150px
