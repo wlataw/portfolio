@@ -6,6 +6,7 @@
 
 .fp-tableCell
   display: block !important
+  position: relative
 
 // div.bufferWrapper
 //   float: left
@@ -17,10 +18,9 @@
 div.logoWrapper
   text-align: center
   margin: 0 auto
-  margin-top: 2em
+  margin-top: 5%
   padding: 30px
   min-width: 300px
-  vertical-align: top
   float: left
   width: 100%
 
@@ -74,6 +74,10 @@ div.arrow
     top: 0
     max-height: 65px
     max-width: 65px
+
+  &:hover
+    svg
+      fill: $hoverColor
 
 @keyframes myframes
   0%

@@ -1,70 +1,73 @@
-div#portfolioId
+// *
+//   border: red solid 1px
+
+div#contactId
   background: url(../img/backgroundTemp1.jpg) center center
   background-size: cover
-  padding-bottom: 5px
+  font-size: 1vw
   //border: red solid 1px
 
-div.aboutBg
+div.contactBg
   text-align: center
-
-  a
-    color: white
-
-    img
-      border: white solid 3px
-
-      h1
-        text-align: center
-        color: white
-
-.aboutBg
-  height: 300px
-
-div.contactWrapper
-  text-align: center
-  margin: 20px
-  margin-bottom: 10px
 
   p
     color: white
-    margin: 20px
+    margin-top: 0.5em
+    margin-bottom: 0.5em
     font:
-      size: 20px
+      size: 1.5em
+    font-family: $fontParagraph
 
-  h2
-    font:
-      size: 96px
-      weight: 400
-    color: white
-    font-family: $fontHeader
+  div.contactWrapper
+    float: left
+    width: 100%
+    margin: 0 auto
+
+    h2
+      font:
+        size: 7em
+        weight: 400
+      color: white
+      font-family: $fontHeader
+      //border: red solid 1px
+
+  div.mediaWrapper
+    text-align: center
+    float: left
+    width: 100%
+    margin: 0 auto
+
+    p
+      margin-top: -0.5em
+
+    div.icons
+      margin-top: 0.3em
+
+      svg
+        width: 5em
+        max-width: 40px
+
+      a
+        margin-left: 0.6em
+        margin-right: 0.6em
+        width: inherit
+        height: inherit
+
+        &:hover
+          path
+            fill: $hoverColor
+
+  div.copyrightWrapper
+    text-align: center
+    float: left
+    width: 100%
+    margin: 0 auto
+    margin-top: 0.3em
+    margin-bottom: 0.1em
     //border: red solid 1px
 
-div.mediaWrapper
-  text-align: center
-  margin-top: 10px
-
-  p
-    color: white
-
-  div.icons
-    margin-top: 20px
-
-    a
-      margin-left: 20px
-      margin-right: 20px
-
-      &:hover
-        path
-          fill: #d9d9d9
-
-div.copyrightWrapper
-  text-align: center
-  margin-top: 10px
-  margin-bottom: 0
-  //border: red solid 1px
-
-  p
-    color: white
-    font:
-      size: 10px
-    margin-bottom: 0
+    p
+      color: white
+      font:
+        size: 1em
+      font-family: $fontParagraph

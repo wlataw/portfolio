@@ -215,15 +215,15 @@ th {
   text-align: center; }
 
 .fp-tableCell {
-  display: block !important; }
+  display: block !important;
+  position: relative; }
 
 div.logoWrapper {
   text-align: center;
   margin: 0 auto;
-  margin-top: 2em;
+  margin-top: 5%;
   padding: 30px;
   min-width: 300px;
-  vertical-align: top;
   float: left;
   width: 100%; }
   div.logoWrapper .logo {
@@ -268,6 +268,8 @@ div.arrow {
     top: 0;
     max-height: 65px;
     max-width: 65px; }
+  div.arrow:hover svg {
+    fill: #bfbfbf; }
 
 @keyframes myframes {
   0% {
@@ -313,40 +315,44 @@ img {
 .clearfix:after {
   clear: both; }
 
-h3 {
-  font-size: 64px;
-  font-weight: 400;
-  color: white;
-  font-family: Ben Brown; }
-
-div#aboutId {
+div#portfolioId {
   background: url(../img/backgroundTemp2.jpg) center center;
   background-size: cover;
-  filter: grayscale(100%);
   /* Common style */
   /* Anchor will cover the whole item by default */
   /* For some effects it will show as a button */ }
-  div#aboutId .bgContainer {
+  div#portfolioId .bgContainer {
     color: white;
     margin: 0 auto;
     max-width: 1300px; }
-  div#aboutId .bgContainer > h2 {
+    div#portfolioId .bgContainer div.portfolioHeader {
+      float: left;
+      width: 100%;
+      margin: 20px auto; }
+      div#portfolioId .bgContainer div.portfolioHeader h3 {
+        font-size: 7vw;
+        font-weight: 400;
+        line-height: 50%;
+        color: white;
+        font-family: Ben Brown;
+        text-align: center; }
+  div#portfolioId .bgContainer > h2 {
     clear: both;
     margin: 0;
     padding: 4em 1% 0;
     color: #484B54;
     font-weight: 800;
     font-size: 1.5em; }
-  div#aboutId .bgContainer > h2:first-child {
+  div#portfolioId .bgContainer > h2:first-child {
     padding-top: 0em; }
-  div#aboutId .grid {
+  div#portfolioId .grid {
     position: relative;
     margin: 0 auto;
     padding: 0;
     max-width: 1300px;
     list-style: none;
     text-align: center; }
-  div#aboutId .grid figure {
+  div#portfolioId .grid figure {
     position: relative;
     display: inline-block;
     float: none;
@@ -358,54 +364,56 @@ div#aboutId {
     width: 48%;
     background: #000;
     text-align: center;
-    cursor: pointer; }
-  div#aboutId .grid figure img {
+    cursor: pointer;
+    border: #4d4d4d solid 2px; }
+  div#portfolioId .grid figure img {
     position: relative;
     display: block;
     min-height: 100%;
     max-width: 100%;
     opacity: 0.8; }
-  div#aboutId .grid figure figcaption {
+  div#portfolioId .grid figure figcaption {
     padding: 2em;
     color: #fff;
     text-transform: uppercase;
     font-size: 1.25em;
+    font-family: "Georgia";
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
-  div#aboutId .grid figure figcaption::before {
+  div#portfolioId .grid figure figcaption::before {
     pointer-events: none; }
-  div#aboutId .grid figure figcaption::after {
+  div#portfolioId .grid figure figcaption::after {
     pointer-events: none; }
-  div#aboutId .grid figure figcaption {
+  div#portfolioId .grid figure figcaption {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%; }
-  div#aboutId .grid figure figcaption > a {
+  div#portfolioId .grid figure figcaption > a {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%; }
-  div#aboutId .grid figure figcaption > a {
+  div#portfolioId .grid figure figcaption > a {
     z-index: 1000;
     text-indent: 200%;
     white-space: nowrap;
     font-size: 0;
     opacity: 0; }
-  div#aboutId .grid figure h2 {
+  div#portfolioId .grid figure h2 {
     word-spacing: -0.15em;
     font-weight: 300;
     font-family: Ben Brown;
     font-size: 2em; }
-  div#aboutId .grid figure h2 span {
+  div#portfolioId .grid figure h2 span {
     font-weight: 800; }
-  div#aboutId .grid figure h2 {
+  div#portfolioId .grid figure h2 {
     margin: 0; }
-  div#aboutId .grid figure p {
+  div#portfolioId .grid figure p {
     margin: 0; }
-  div#aboutId .grid figure p {
+  div#portfolioId .grid figure p {
     letter-spacing: 1px;
     font-size: 68.5%; }
 
@@ -491,58 +499,57 @@ section {
     float: none !important;
     margin: 10px auto;
     width: 100%; } }
-div#portfolioId {
+div#contactId {
   background: url(../img/backgroundTemp1.jpg) center center;
   background-size: cover;
-  padding-bottom: 5px; }
+  font-size: 1vw; }
 
-div.aboutBg {
+div.contactBg {
   text-align: center; }
-  div.aboutBg a {
-    color: white; }
-    div.aboutBg a img {
-      border: white solid 3px; }
-      div.aboutBg a img h1 {
-        text-align: center;
-        color: white; }
-
-.aboutBg {
-  height: 300px; }
-
-div.contactWrapper {
-  text-align: center;
-  margin: 20px;
-  margin-bottom: 10px; }
-  div.contactWrapper p {
+  div.contactBg p {
     color: white;
-    margin: 20px;
-    font-size: 20px; }
-  div.contactWrapper h2 {
-    font-size: 96px;
-    font-weight: 400;
-    color: white;
-    font-family: Ben Brown; }
-
-div.mediaWrapper {
-  text-align: center;
-  margin-top: 10px; }
-  div.mediaWrapper p {
-    color: white; }
-  div.mediaWrapper div.icons {
-    margin-top: 20px; }
-    div.mediaWrapper div.icons a {
-      margin-left: 20px;
-      margin-right: 20px; }
-      div.mediaWrapper div.icons a:hover path {
-        fill: #d9d9d9; }
-
-div.copyrightWrapper {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 0; }
-  div.copyrightWrapper p {
-    color: white;
-    font-size: 10px;
-    margin-bottom: 0; }
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    font-family: "Georgia"; }
+  div.contactBg div.contactWrapper {
+    float: left;
+    width: 100%;
+    margin: 0 auto; }
+    div.contactBg div.contactWrapper h2 {
+      font-size: 7em;
+      font-weight: 400;
+      color: white;
+      font-family: Ben Brown; }
+  div.contactBg div.mediaWrapper {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin: 0 auto; }
+    div.contactBg div.mediaWrapper p {
+      margin-top: -0.5em; }
+    div.contactBg div.mediaWrapper div.icons {
+      margin-top: 0.3em; }
+      div.contactBg div.mediaWrapper div.icons svg {
+        width: 5em;
+        max-width: 40px; }
+      div.contactBg div.mediaWrapper div.icons a {
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+        width: inherit;
+        height: inherit; }
+        div.contactBg div.mediaWrapper div.icons a:hover path {
+          fill: #bfbfbf; }
+  div.contactBg div.copyrightWrapper {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0.3em;
+    margin-bottom: 0.1em; }
+    div.contactBg div.copyrightWrapper p {
+      color: white;
+      font-size: 1em;
+      font-family: "Georgia"; }
 
 /*# sourceMappingURL=main.css.map */
