@@ -21,12 +21,16 @@ div.logoWrapper
   min-width: 300px
   float: left
   width: 100%
-  margin-top: 30vh
+  margin-top: -webkit-calc(50vh - 12vw)
+  margin-top:    -moz-calc(50vh - 12vw)
+  margin-top:         calc(50vh - 12vw)
 
   .logo
     margin: 0 auto
     display: inline-block
     width: 25%
+    min-width: 250px
+    max-width: 500px
 
     path
       fill: $mainColor !important
@@ -46,7 +50,7 @@ div.arrow
   margin-left: -25px
   max-height: 65px
   max-width: 65px
-  width: 5vw
+  width: 65px
   animation: myframes 1.5s ease-in-out 0s infinite
 
   a
@@ -57,11 +61,13 @@ div.arrow
     max-width: 65px
 
     svg
-      width: 50%
+      path
+        fill: #ffffff
 
   &:hover
     svg
-      fill: $hoverColor
+      path
+        fill: $hoverColor
 
 @keyframes myframes
   0%
@@ -85,3 +91,9 @@ video#bgvid
   background-position: center center
   object-fit: cover
   z-index: -1
+
+@media screen and (max-width: 720px)
+  div.logoWrapper
+    margin-top: -webkit-calc(50vh - 25vw)
+    margin-top:    -moz-calc(50vh - 25vw)
+    margin-top:         calc(50vh - 25vw)

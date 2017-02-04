@@ -11,7 +11,7 @@
    inkscape:version="0.92.0 unknown"><metadata
      id="defs18" /><sodipodi:namedview
      pagecolor="#ffffff"
-     bordercolor="#ffffff"
+     bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
      gridtolerance="10"
@@ -42,7 +42,7 @@
      d="m 33.428,42.437124 17.998,-18.004 c 0.788,-0.79 0.788,-2.07 0,-2.862 -0.788,-0.79 -2.068,-0.79 -2.856,0 l -16.57,16.576 -16.570001,-16.574 c -0.788,-0.79 -2.068,-0.79 -2.858,0 -0.788,0.79 -0.788,2.072 0,2.862 L 30.57,42.439124 c 0.78,0.778 2.08,0.778 2.858,-0.002 z"
      id="Chevron_Right"
      inkscape:connector-curvature="0"
-     style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd;stroke-width:2" /><g
+     style="clip-rule:evenodd;fill:#121313;fill-rule:evenodd;stroke-width:2" /><g
      id="g3"
      transform="translate(0,32)" /><g
      id="g5"

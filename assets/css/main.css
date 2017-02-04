@@ -223,11 +223,15 @@ div.logoWrapper {
   min-width: 300px;
   float: left;
   width: 100%;
-  margin-top: 30vh; }
+  margin-top: -webkit-calc(50vh - 12vw);
+  margin-top: -moz-calc(50vh - 12vw);
+  margin-top: calc(50vh - 12vw); }
   div.logoWrapper .logo {
     margin: 0 auto;
     display: inline-block;
-    width: 25%; }
+    width: 25%;
+    min-width: 250px;
+    max-width: 500px; }
     div.logoWrapper .logo path {
       fill: #ffffff !important; }
     div.logoWrapper .logo:hover path {
@@ -243,7 +247,7 @@ div.arrow {
   margin-left: -25px;
   max-height: 65px;
   max-width: 65px;
-  width: 5vw;
+  width: 65px;
   animation: myframes 1.5s ease-in-out 0s infinite; }
   div.arrow a {
     position: absolute;
@@ -251,9 +255,9 @@ div.arrow {
     top: 0;
     max-height: 65px;
     max-width: 65px; }
-    div.arrow a svg {
-      width: 50%; }
-  div.arrow:hover svg {
+    div.arrow a svg path {
+      fill: #ffffff; }
+  div.arrow:hover svg path {
     fill: #bfbfbf; }
 
 @keyframes myframes {
@@ -278,6 +282,11 @@ video#bgvid {
   object-fit: cover;
   z-index: -1; }
 
+@media screen and (max-width: 720px) {
+  div.logoWrapper {
+    margin-top: -webkit-calc(50vh - 25vw);
+    margin-top: -moz-calc(50vh - 25vw);
+    margin-top: calc(50vh - 25vw); } }
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -319,7 +328,7 @@ div#portfolioId {
         font-weight: 400;
         line-height: 50%;
         color: white;
-        font-family: "Dosis Light";
+        font-family: "Dosis";
         text-align: center; }
   div#portfolioId .bgContainer > h2 {
     clear: both;
@@ -343,7 +352,7 @@ div#portfolioId {
     float: none;
     overflow: hidden;
     margin: 10px;
-    min-width: 300px;
+    min-width: 240px;
     max-width: 400px;
     max-height: 300px;
     width: 48%;
@@ -362,7 +371,7 @@ div#portfolioId {
     color: #fff;
     font-variant: small-caps;
     font-size: 1.25em;
-    font-family: "Dosis Light";
+    font-family: "Dosis";
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
   div#portfolioId .grid figure figcaption::before {
@@ -390,7 +399,7 @@ div#portfolioId {
   div#portfolioId .grid figure h2 {
     word-spacing: 0;
     font-weight: 300;
-    font-family: "Dosis Light";
+    font-family: "Dosis";
     font-size: 1em;
     font-variant: normal; }
   div#portfolioId .grid figure h2 {
@@ -468,68 +477,64 @@ div#contactId {
   background: url(../img/backgroundTemp1.jpg) center center;
   background-size: cover; }
 
-div.fontSizer {
+div.contactBg {
   position: relative;
   margin: 0 auto;
-  max-width: 1000px; }
-  div.fontSizer div.contactBg {
-    position: relative;
+  font-size: 1em;
+  margin-top: 0.5em; }
+  div.contactBg p {
+    color: white;
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+    font-size: 1em;
+    font-family: "Dosis";
+    text-align: center; }
+  div.contactBg div.contactWrapper {
+    float: left;
+    width: 100%;
     margin: 0 auto;
-    font-size: 1vw; }
-    div.fontSizer div.contactBg p {
+    margin-bottom: 0.5em; }
+    div.contactBg div.contactWrapper h2 {
+      font-size: 4em;
+      font-weight: 400;
       color: white;
-      margin-top: 0.5em;
-      margin-bottom: 0.5em;
-      font-size: 1.5em;
-      font-family: "Dosis Light";
+      font-family: Ben Brown;
       text-align: center; }
-    div.fontSizer div.contactBg div.contactWrapper {
-      float: left;
-      width: 100%;
-      margin: 0 auto; }
-      div.fontSizer div.contactBg div.contactWrapper h2 {
-        font-size: 7em;
-        font-weight: 400;
-        color: white;
-        font-family: Ben Brown;
-        text-align: center; }
-    div.fontSizer div.contactBg div.mediaWrapper {
-      text-align: center;
-      float: left;
-      width: 100%;
-      margin: 0 auto; }
-      div.fontSizer div.contactBg div.mediaWrapper p {
-        margin-top: -0.5em; }
-      div.fontSizer div.contactBg div.mediaWrapper div.icons {
-        margin-top: 0.3em; }
-        div.fontSizer div.contactBg div.mediaWrapper div.icons svg {
-          width: 5em;
-          max-width: 40px; }
-        div.fontSizer div.contactBg div.mediaWrapper div.icons a {
-          margin-left: 0.6em;
-          margin-right: 0.6em;
-          width: inherit;
-          height: inherit; }
-          div.fontSizer div.contactBg div.mediaWrapper div.icons a:hover path {
-            fill: #bfbfbf; }
-    div.fontSizer div.contactBg div.copyrightWrapper {
-      text-align: center;
-      float: left;
-      width: 100%;
-      margin: 0 auto;
-      margin-top: 0.3em;
-      margin-bottom: 0.1em; }
-      div.fontSizer div.contactBg div.copyrightWrapper p {
-        color: white;
-        font-size: 0.7em;
-        font-family: "Dosis Light"; }
+  div.contactBg div.mediaWrapper {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin: 0 auto; }
+    div.contactBg div.mediaWrapper p {
+      margin-top: 0em; }
+    div.contactBg div.mediaWrapper div.icons {
+      margin-top: 0.3em; }
+      div.contactBg div.mediaWrapper div.icons svg {
+        width: 5em;
+        max-width: 40px; }
+      div.contactBg div.mediaWrapper div.icons a {
+        margin-left: 0.4em;
+        margin-right: 0.4em;
+        width: inherit;
+        height: inherit;
+        text-decoration: none; }
+        div.contactBg div.mediaWrapper div.icons a:hover path {
+          fill: #bfbfbf; }
+  div.contactBg div.copyrightWrapper {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0.3em;
+    margin-bottom: 0.1em; }
+    div.contactBg div.copyrightWrapper p {
+      color: white;
+      font-size: 0.7em;
+      font-family: "Dosis"; }
 
-@media screen and (max-width: 720px) {
-  div.contactBg {
-    font-size: 10px; } }
 @media screen and (max-width: 480px) {
   div.contactBg div.contactWrapper h2 {
-    font-size: 5em; } }
+    font-size: 3em; } }
 @media screen and (max-width: 320px) {
   div.contactBg div.contactWrapper h2 {
     font-size: 3em; } }
