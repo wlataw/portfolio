@@ -17,19 +17,16 @@
 
 div.logoWrapper
   text-align: center
-  margin: 0 auto
-  margin-top: 5%
-  padding: 30px
+  margin: auto
   min-width: 300px
   float: left
   width: 100%
+  margin-top: 30vh
 
   .logo
     margin: 0 auto
     display: inline-block
-    width: 15%
-    max-width: 260px
-    min-width: 100px
+    width: 25%
 
     path
       fill: $mainColor !important
@@ -40,24 +37,7 @@ div.logoWrapper
 
     svg
       width: 100%
-      max-width: 260px
       height: inherit
-      max-height: 360px
-
-    .titleWrapper
-      width: 100%
-      float: left
-
-  h2.title
-    text-align: center
-    font-size: 10vw
-    font-weight: 300
-    color: white
-    font-family: $fontHeader
-    margin-top: 0.2em
-    margin: auto
-    white-space: nowrap
-    //border: red solid 1px
 
 div.arrow
   position: fixed
@@ -66,6 +46,7 @@ div.arrow
   margin-left: -25px
   max-height: 65px
   max-width: 65px
+  width: 5vw
   animation: myframes 1.5s ease-in-out 0s infinite
 
   a
@@ -74,6 +55,9 @@ div.arrow
     top: 0
     max-height: 65px
     max-width: 65px
+
+    svg
+      width: 50%
 
   &:hover
     svg

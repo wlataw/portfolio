@@ -180,14 +180,13 @@ th {
   padding: 0; }
 
 @font-face {
-  font-family: 'Fira Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Fira Sans"), local("FiraSans-Regular"), url(http://fonts.gstatic.com/s/firasans/v5/EjsrzDkQUQCDwsBtLpcVQZBw1xU1rKptJj_0jans920.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
-@font-face {
   font-family: "Ben Brown";
   src: url("BENBROWN.woff") format("woff"), url("BENBROWN.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Dosis Light";
+  src: url("Dosis-Light.eot?") format("eot"), url("Dosis-Light.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 .fp-controlArrow {
@@ -220,39 +219,22 @@ th {
 
 div.logoWrapper {
   text-align: center;
-  margin: 0 auto;
-  margin-top: 5%;
-  padding: 30px;
+  margin: auto;
   min-width: 300px;
   float: left;
-  width: 100%; }
+  width: 100%;
+  margin-top: 30vh; }
   div.logoWrapper .logo {
     margin: 0 auto;
     display: inline-block;
-    width: 15%;
-    max-width: 260px;
-    min-width: 100px; }
+    width: 25%; }
     div.logoWrapper .logo path {
       fill: #ffffff !important; }
     div.logoWrapper .logo:hover path {
       fill: #d9d9d9; }
     div.logoWrapper .logo svg {
       width: 100%;
-      max-width: 260px;
-      height: inherit;
-      max-height: 360px; }
-    div.logoWrapper .logo .titleWrapper {
-      width: 100%;
-      float: left; }
-  div.logoWrapper h2.title {
-    text-align: center;
-    font-size: 10vw;
-    font-weight: 300;
-    color: white;
-    font-family: Ben Brown;
-    margin-top: 0.2em;
-    margin: auto;
-    white-space: nowrap; }
+      height: inherit; }
 
 div.arrow {
   position: fixed;
@@ -261,6 +243,7 @@ div.arrow {
   margin-left: -25px;
   max-height: 65px;
   max-width: 65px;
+  width: 5vw;
   animation: myframes 1.5s ease-in-out 0s infinite; }
   div.arrow a {
     position: absolute;
@@ -268,6 +251,8 @@ div.arrow {
     top: 0;
     max-height: 65px;
     max-width: 65px; }
+    div.arrow a svg {
+      width: 50%; }
   div.arrow:hover svg {
     fill: #bfbfbf; }
 
@@ -316,7 +301,7 @@ img {
   clear: both; }
 
 div#portfolioId {
-  background: url(../img/backgroundTemp2.jpg) center center;
+  background: url(../img/portfoliobg5.jpg) center center;
   background-size: cover;
   /* Common style */
   /* Anchor will cover the whole item by default */
@@ -328,13 +313,13 @@ div#portfolioId {
     div#portfolioId .bgContainer div.portfolioHeader {
       float: left;
       width: 100%;
-      margin: 20px auto; }
+      margin: 30px auto; }
       div#portfolioId .bgContainer div.portfolioHeader h3 {
-        font-size: 7vw;
+        font-size: 2em;
         font-weight: 400;
         line-height: 50%;
         color: white;
-        font-family: Ben Brown;
+        font-family: "Dosis Light";
         text-align: center; }
   div#portfolioId .bgContainer > h2 {
     clear: both;
@@ -358,14 +343,14 @@ div#portfolioId {
     float: none;
     overflow: hidden;
     margin: 10px;
-    min-width: 240px;
+    min-width: 300px;
     max-width: 400px;
     max-height: 300px;
     width: 48%;
     background: #000;
     text-align: center;
     cursor: pointer;
-    border: #4d4d4d solid 2px; }
+    border: #ffffff solid 2px; }
   div#portfolioId .grid figure img {
     position: relative;
     display: block;
@@ -375,9 +360,9 @@ div#portfolioId {
   div#portfolioId .grid figure figcaption {
     padding: 2em;
     color: #fff;
-    text-transform: uppercase;
+    font-variant: small-caps;
     font-size: 1.25em;
-    font-family: "Georgia";
+    font-family: "Dosis Light";
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
   div#portfolioId .grid figure figcaption::before {
@@ -403,12 +388,11 @@ div#portfolioId {
     font-size: 0;
     opacity: 0; }
   div#portfolioId .grid figure h2 {
-    word-spacing: -0.15em;
+    word-spacing: 0;
     font-weight: 300;
-    font-family: Ben Brown;
-    font-size: 2em; }
-  div#portfolioId .grid figure h2 span {
-    font-weight: 800; }
+    font-family: "Dosis Light";
+    font-size: 1em;
+    font-variant: normal; }
   div#portfolioId .grid figure h2 {
     margin: 0; }
   div#portfolioId .grid figure p {
@@ -452,7 +436,7 @@ figure.effect-marley h2::after {
   top: 100%;
   left: 0;
   width: 100%;
-  height: 4px;
+  height: 2px;
   background: #fff;
   content: "";
   -webkit-transform: translate3d(0, 40px, 0);
@@ -470,25 +454,6 @@ figure.effect-marley:hover p {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
-body {
-  background: #2f3238;
-  color: #fff;
-  font-weight: 400;
-  font-size: 1em;
-  font-family: "Raleway", Arial, sans-serif; }
-
-a {
-  outline: none;
-  color: #3498db;
-  text-decoration: none; }
-
-a:hover, a:focus {
-  color: #528cb3; }
-
-section {
-  padding: 1em;
-  text-align: center; }
-
 @media screen and (max-width: 50em) {
   .content {
     padding: 0 10px;
@@ -501,64 +466,72 @@ section {
     width: 100%; } }
 div#contactId {
   background: url(../img/backgroundTemp1.jpg) center center;
-  background-size: cover;
-  font-size: 1vw; }
+  background-size: cover; }
 
-div.contactBg {
+div.fontSizer {
   position: relative;
   margin: 0 auto;
-  max-width: 1200px;
-  font-size: 1vw; }
-  div.contactBg p {
-    color: white;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    font-size: 1.5em;
-    font-family: "Georgia";
-    text-align: center; }
-  div.contactBg div.contactWrapper {
-    float: left;
-    width: 100%;
-    margin: 0 auto; }
-    div.contactBg div.contactWrapper h2 {
-      font-size: 7em;
-      font-weight: 400;
-      color: white;
-      font-family: Ben Brown;
-      text-align: center; }
-  div.contactBg div.mediaWrapper {
-    text-align: center;
-    float: left;
-    width: 100%;
-    margin: 0 auto; }
-    div.contactBg div.mediaWrapper p {
-      margin-top: -0.5em; }
-    div.contactBg div.mediaWrapper div.icons {
-      margin-top: 0.3em; }
-      div.contactBg div.mediaWrapper div.icons svg {
-        width: 5em;
-        max-width: 40px; }
-      div.contactBg div.mediaWrapper div.icons a {
-        margin-left: 0.6em;
-        margin-right: 0.6em;
-        width: inherit;
-        height: inherit; }
-        div.contactBg div.mediaWrapper div.icons a:hover path {
-          fill: #bfbfbf; }
-  div.contactBg div.copyrightWrapper {
-    text-align: center;
-    float: left;
-    width: 100%;
+  max-width: 1000px; }
+  div.fontSizer div.contactBg {
+    position: relative;
     margin: 0 auto;
-    margin-top: 0.3em;
-    margin-bottom: 0.1em; }
-    div.contactBg div.copyrightWrapper p {
+    font-size: 1vw; }
+    div.fontSizer div.contactBg p {
       color: white;
-      font-size: 1em;
-      font-family: "Georgia"; }
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      font-size: 1.5em;
+      font-family: "Dosis Light";
+      text-align: center; }
+    div.fontSizer div.contactBg div.contactWrapper {
+      float: left;
+      width: 100%;
+      margin: 0 auto; }
+      div.fontSizer div.contactBg div.contactWrapper h2 {
+        font-size: 7em;
+        font-weight: 400;
+        color: white;
+        font-family: Ben Brown;
+        text-align: center; }
+    div.fontSizer div.contactBg div.mediaWrapper {
+      text-align: center;
+      float: left;
+      width: 100%;
+      margin: 0 auto; }
+      div.fontSizer div.contactBg div.mediaWrapper p {
+        margin-top: -0.5em; }
+      div.fontSizer div.contactBg div.mediaWrapper div.icons {
+        margin-top: 0.3em; }
+        div.fontSizer div.contactBg div.mediaWrapper div.icons svg {
+          width: 5em;
+          max-width: 40px; }
+        div.fontSizer div.contactBg div.mediaWrapper div.icons a {
+          margin-left: 0.6em;
+          margin-right: 0.6em;
+          width: inherit;
+          height: inherit; }
+          div.fontSizer div.contactBg div.mediaWrapper div.icons a:hover path {
+            fill: #bfbfbf; }
+    div.fontSizer div.contactBg div.copyrightWrapper {
+      text-align: center;
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 0.3em;
+      margin-bottom: 0.1em; }
+      div.fontSizer div.contactBg div.copyrightWrapper p {
+        color: white;
+        font-size: 0.7em;
+        font-family: "Dosis Light"; }
 
 @media screen and (max-width: 720px) {
   div.contactBg {
     font-size: 10px; } }
+@media screen and (max-width: 480px) {
+  div.contactBg div.contactWrapper h2 {
+    font-size: 5em; } }
+@media screen and (max-width: 320px) {
+  div.contactBg div.contactWrapper h2 {
+    font-size: 3em; } }
 
 /*# sourceMappingURL=main.css.map */
