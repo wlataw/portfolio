@@ -257,9 +257,9 @@ div.arrow {
     max-height: 65px;
     max-width: 65px; }
     div.arrow a svg path {
-      fill: #ffffff; }
+      fill: #bfbfbf; }
   div.arrow:hover svg path {
-    fill: #bfbfbf; }
+    fill: #a6a6a6; }
 
 @keyframes myframes {
   0% {
@@ -303,9 +303,9 @@ img#bgimg {
 
 @media screen and (max-width: 720px) {
   div.logoWrapper {
-    margin-top: -webkit-calc(50vh - 25vw);
-    margin-top: -moz-calc(50vh - 25vw);
-    margin-top: calc(50vh - 25vw); } }
+    margin-top: -webkit-calc(50vh - 30vw);
+    margin-top: -moz-calc(50vh - 30vw);
+    margin-top: calc(50vh - 30vw); } }
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -333,10 +333,7 @@ img {
 
 div#portfolioId {
   background: url(../img/portfoliobg5.jpg) center center;
-  background-size: cover;
-  /* Common style */
-  /* Anchor will cover the whole item by default */
-  /* For some effects it will show as a button */ }
+  background-size: cover; }
   div#portfolioId .bgContainer {
     color: white;
     margin: 0 auto;
@@ -432,9 +429,6 @@ div#portfolioId {
     letter-spacing: 1px;
     font-size: 68.5%; }
 
-/*--------------- */
-/***** Marley **** */
-/*--------------- */
 figure.effect-marley figcaption {
   text-align: right; }
 
@@ -485,16 +479,6 @@ figure.effect-marley:hover p {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
-@media screen and (max-width: 50em) {
-  .content {
-    padding: 0 10px;
-    text-align: center; }
-
-  .grid figure {
-    display: inline-block;
-    float: none !important;
-    margin: 10px auto;
-    width: 100%; } }
 div#contactId {
   background: url(../img/bg5.jpg) center center;
   background-size: cover; }
