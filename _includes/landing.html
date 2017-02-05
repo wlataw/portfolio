@@ -1,15 +1,35 @@
-  <div class="logoWrapper">
-    <a href="#" class="logo">{% include icons/logotyp.html %}</a>
-  <!-- <div class="titleWrapper">
-    <h2 class="title">Wojciech Latawiec</h2>
-  </div> -->
+<div class="video-responsive">
+  <video class="video" playsinline autoplay muted loop data-keepplaying id="bgvid">
+      <source src="{{ site.baseurl }}/assets/video/bgr.mp4" type="video/mp4" />
+      <source src="{{ site.baseurl }}/assets/video/bgr.webm" type="video/webm" />
+      Your browser does not support HTML5 video.
+  </video>
+  <canvas class="canvas"></canvas>
+  <div id="over_video">
+    <div class="logoWrapper">
+      <a href="#" class="logo">{% include icons/logotyp.html %}</a>
+    </div>
+    <div class="arrow">
+      <a href="#page2">{% include icons/arrow.html %}</a>
+    </div>
   </div>
-<!-- <div class="arrowWrapper"> -->
-  <div class="arrow">
-    <a href="#page2">{% include icons/arrow.html %}</a>
-  </div>
-<!-- </div> -->
-<video playsinline autoplay muted loop data-keepplaying id="bgvid">
-    <source src="{{ site.baseurl }}/assets/video/bgr.mp4" type="video/mp4" />
-    <source src="{{ site.baseurl }}/assets/video/bgr.webm" type="video/webm" />
-</video>
+</div>
+
+<script>
+  var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+    if (isIOS) {
+      var canvasVideo = new CanvasVideoPlayer({
+          videoSelector: '.video',
+          canvasSelector: '.canvas',
+          timelineSelector: false,
+          autoplay: true,
+          makeLoop: true,
+          pauseOnClick: false,
+          audio: false
+      });
+    }else {
+      // Use HTML5 video
+      document.querySelectorAll('.canvas')[0].style.display = 'none';
+
+    }
+</script>
