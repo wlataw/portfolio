@@ -223,13 +223,13 @@ div.logoWrapper {
   min-width: 300px;
   float: left;
   width: 100%;
-  margin-top: -webkit-calc(50vh - 12vw);
-  margin-top: -moz-calc(50vh - 12vw);
-  margin-top: calc(50vh - 12vw); }
+  margin-top: -webkit-calc(50vh - 10vw);
+  margin-top: -moz-calc(50vh - 10vw);
+  margin-top: calc(50vh - 10vw); }
   div.logoWrapper .logo {
     margin: 0 auto;
     display: inline-block;
-    width: 25%;
+    width: 22%;
     min-width: 250px;
     max-width: 500px; }
     div.logoWrapper .logo path {
@@ -238,7 +238,8 @@ div.logoWrapper {
       fill: #d9d9d9; }
     div.logoWrapper .logo svg {
       width: 100%;
-      height: inherit; }
+      height: inherit;
+      max-height: 100%; }
 
 div.arrow {
   position: fixed;
@@ -312,6 +313,9 @@ img#bgimg {
 
 img {
   filter: grayscale(100%); }
+
+.iosHeight {
+  max-height: 200px !important; }
 
 .iScrollIndicator {
   background: #4d4d4d !important; }
@@ -492,7 +496,7 @@ figure.effect-marley:hover p {
     margin: 10px auto;
     width: 100%; } }
 div#contactId {
-  background: url(../img/backgroundTemp1.jpg) center center;
+  background: url(../img/bg5.jpg) center center;
   background-size: cover; }
 
 div.contactBg {

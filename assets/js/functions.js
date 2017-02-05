@@ -15,6 +15,7 @@ $( document ).ready(function() {
           if(iOS) { // Is iOS.
               $("video#bgvid").addClass('displayNone');
               $("img#bgimg").removeClass('displayNone');
+              $("figure").addClass('iosHeight');
           }
   });
 });
