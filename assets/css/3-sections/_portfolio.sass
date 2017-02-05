@@ -58,7 +58,7 @@ div#portfolioId
   .grid
     position: relative
     margin: 0 auto
-    padding: 0
+    padding: 1em 0 4em
     max-width: 1300px
     list-style: none
     text-align: center
@@ -70,20 +70,19 @@ div#portfolioId
     display: inline-block
     float: none
     overflow: hidden
-    margin: 10px
+    margin: 10px 1%
     min-width: 240px
     max-width: 400px
     max-height: 300px
-    width: 48%
+    width: 32%
     background: #000
     text-align: center
     cursor: pointer
     border: $mainColor solid 2px
-    //border: blue solid 1px
 
   .grid figure img
     position: relative
-    display: block
+    display: inline-block
     min-height: 100%
     max-width: 100%
     opacity: 0.8
@@ -211,14 +210,3 @@ figure.effect-marley:hover p
   opacity: 1
   -webkit-transform: translate3d(0,0,0)
   transform: translate3d(0,0,0)
-
-@media screen and (max-width: 50em)
-  .content
-    padding: 0 10px
-    text-align: center
-
-  .grid figure
-    display: inline-block
-    float: none !important
-    margin: 10px auto
-    width: 100%

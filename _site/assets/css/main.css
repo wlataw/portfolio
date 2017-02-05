@@ -297,9 +297,9 @@ th {
     margin-bottom: 4em; } }
 @media screen and (max-width: 720px) {
   #over_video div.logoWrapper {
-    margin-top: -webkit-calc(50vh - 28vw);
-    margin-top: -moz-calc(50vh - 28vw);
-    margin-top: calc(50vh - 28vw); } }
+    margin-top: -webkit-calc(50vh - 30vw);
+    margin-top: -moz-calc(50vh - 30vw);
+    margin-top: calc(50vh - 30vw); } }
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -355,7 +355,7 @@ div#portfolioId {
   div#portfolioId .grid {
     position: relative;
     margin: 0 auto;
-    padding: 0;
+    padding: 1em 0 4em;
     max-width: 1300px;
     list-style: none;
     text-align: center; }
@@ -364,18 +364,18 @@ div#portfolioId {
     display: inline-block;
     float: none;
     overflow: hidden;
-    margin: 10px;
+    margin: 10px 1%;
     min-width: 240px;
     max-width: 400px;
     max-height: 300px;
-    width: 48%;
+    width: 32%;
     background: #000;
     text-align: center;
     cursor: pointer;
     border: #ffffff solid 2px; }
   div#portfolioId .grid figure img {
     position: relative;
-    display: block;
+    display: inline-block;
     min-height: 100%;
     max-width: 100%;
     opacity: 0.8; }
@@ -476,16 +476,6 @@ figure.effect-marley:hover p {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
-@media screen and (max-width: 50em) {
-  .content {
-    padding: 0 10px;
-    text-align: center; }
-
-  .grid figure {
-    display: inline-block;
-    float: none !important;
-    margin: 10px auto;
-    width: 100%; } }
 div#contactId {
   background: url(../img/backgroundTemp1.jpg) center center;
   background-size: cover; }

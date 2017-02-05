@@ -27,6 +27,7 @@ var CanvasVideoPlayer = function(options) {
 	this.canvas = document.querySelector(this.options.canvasSelector);
 	this.timeline = document.querySelector(this.options.timelineSelector);
 	this.timelinePassed = document.querySelector(this.options.timelineSelector + '> div');
+	this.video.setAttribute('object-fit', 'cover');
 
 	if (!this.options.videoSelector || !this.video) {
 		console.error('No "videoSelector" property, or the element is not found');
@@ -200,6 +201,7 @@ CanvasVideoPlayer.prototype.setCanvasSize = function() {
 
 	this.canvas.setAttribute('width', this.width);
 	this.canvas.setAttribute('height', this.height);
+	this.canvas.setAttribute('object-fit', 'cover');
 };
 
 CanvasVideoPlayer.prototype.play = function() {
