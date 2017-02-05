@@ -297,6 +297,9 @@ img#bgimg {
   object-fit: cover;
   z-index: -1; }
 
+.displayNone {
+  display: none; }
+
 @media screen and (max-width: 720px) {
   div.logoWrapper {
     margin-top: -webkit-calc(50vh - 25vw);
