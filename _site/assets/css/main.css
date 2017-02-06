@@ -506,6 +506,9 @@ div.contactBg {
       color: white;
       font-family: Ben Brown;
       text-align: center; }
+      div.contactBg div.contactWrapper h2 a {
+        text-decoration: none;
+        color: #ffffff; }
   div.contactBg div.mediaWrapper {
     text-align: center;
     float: left;

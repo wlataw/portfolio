@@ -18,8 +18,6 @@ $( document ).ready(function() {
           }
 
           if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            $("a.openLity").addClass('displayNone');
-            $("a.noLity").removeClass('displayNone');
             $("h2.onDesktop").addClass('displayNone');
             $("h2.onMobile").removeClass('displayNone');
           }
