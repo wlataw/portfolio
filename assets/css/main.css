@@ -338,6 +338,20 @@ div#portfolioId {
     color: white;
     margin: 0 auto;
     max-width: 1300px; }
+    div#portfolioId .bgContainer div.showContact {
+      float: left;
+      width: 100%;
+      margin: 20px auto; }
+      div#portfolioId .bgContainer div.showContact h3 {
+        font-size: 1.25em;
+        font-weight: 400;
+        line-height: 50%;
+        color: white;
+        font-family: "Dosis";
+        text-align: center; }
+        div#portfolioId .bgContainer div.showContact h3 a {
+          color: #ffffff;
+          text-decoration: none; }
     div#portfolioId .bgContainer div.portfolioHeader {
       float: left;
       width: 100%;
